@@ -4,6 +4,11 @@
 
 int main() {
     srand(time(NULL));
+    char name[50];
+
+    printf("What is your name? \n");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
 
     printf("Rolling dice...\n");
     int die1 = rand() % 6 + 1;
